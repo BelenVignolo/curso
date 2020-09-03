@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Allure TestNG Suite" verbose="1">
+    <test name="CompareProducts">
+        <classes>
+            <class name="scripts.CompareProducts"/>
+        </classes>
+    </test>
+    <test name="Register">
+        <classes>
+            <class name="scripts.Register"/>
+        </classes>
+    </test>
+    <test name="Login">
+        <parameter name="email" value="peerez@mail.com"/>
+        <parameter name="password" value="123456"/>
+        <classes>
+            <class name="scripts.Login"/>
+        </classes>
+    </test>
+    <test name="AddToWishList">
+        <parameter name="email" value="peerez@mail.com"/>
+        <parameter name="password" value="123456"/>
+        <classes>
+            <class name="scripts.AddToWishList"/>
+        </classes>
+    </test>
+    <test name="AddToCart">
+        <parameter name="product" value="RETRO CHIC EYEGLASSES"/>
+        <classes>
+            <class name="scripts.AddToCart"/>
+        </classes>
+    </test>
+
+</suite>
